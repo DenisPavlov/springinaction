@@ -31,7 +31,8 @@
   </build>
 
   <modules>
-    <module>translators</module>
+    <!--<module>translators</module>-->
+    <module>knights</module>
   </modules>
 
   <repositories>
