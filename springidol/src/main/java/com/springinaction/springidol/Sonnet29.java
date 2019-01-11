@@ -26,5 +26,10 @@ public class Sonnet29 implements Poem {
       System.out.println(LINES[i]);
     }
   }
+
+  public void turnOnLights() {
+    System.out.println("Lights ON");
+//		...
+  }
 }
 //<end id="sonnet29_java" />

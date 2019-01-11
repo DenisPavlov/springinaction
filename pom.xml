@@ -33,6 +33,7 @@
   <modules>
     <!--<module>translators</module>-->
     <module>knights</module>
+    <module>springidol</module>
   </modules>
 
   <repositories>
