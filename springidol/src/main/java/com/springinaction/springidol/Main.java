@@ -8,7 +8,5 @@ public class Main {
         ApplicationContext context =
                 new ClassPathXmlApplicationContext("com/springinaction/springidol/spring-idol.xml");
 
-        Performer performer = (Performer) context.getBean("harry");
-        performer.perform();
     }
 }

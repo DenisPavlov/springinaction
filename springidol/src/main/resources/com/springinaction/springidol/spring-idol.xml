@@ -4,8 +4,11 @@
  xmlns:util="http://www.springframework.org/schema/util"
  xmlns:p="http://www.springframework.org/schema/p"
  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"
-  default-init-method="turnOnLights" default-destroy-method="turnOffLights">
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+  <!--default-init-method="turnOnLights" default-destroy-method="turnOffLights">-->
+
+
+
 
   <!--<start id="duke_bean" />--> 
   <!--<bean id="duke" class="com.springinaction.springidol.Juggler">-->
@@ -40,10 +43,15 @@
   <!--</bean>-->
   <!--<end id="kenny2_bean" />-->
 
-  <bean id="stevie" class="com.springinaction.springidol.Instrumentalist">
-    <lookup-method name="getInstrument" bean="piano" />
-    <property name="song" value="Greensleeves" />
-  </bean>
+  <!--<bean id="stevie" class="com.springinaction.springidol.Instrumentalist">-->
+    <!--<lookup-method name="getInstrument" bean="piano" />-->
+    <!--<property name="song" value="Greensleeves" />-->
+  <!--</bean>-->
+
+  <!--<bean class="com.springinaction.bpp.Fuddifier"/>-->
+  <!--<bean id="bean_01" class="com.springinaction.bpp.MyClass">-->
+    <!--<property name="words" value="Roman romal Loh loh"/>-->
+  <!--</bean>-->
 
   <!--<bean id="hank"-->
         <!--class="com.springinaction.springidol.OneManBand">-->
@@ -105,7 +113,7 @@
   
   
   <!--<start id="saxophone_bean" />-->
-  <bean id="piano" class="com.springinaction.springidol.Piano" />
+  <!--<bean id="piano" class="com.springinaction.springidol.Piano" />-->
   <!--<bean id="saxophone" class="com.springinaction.springidol.Saxophone" />-->
   <!--<end id="saxophone_bean" />-->
 

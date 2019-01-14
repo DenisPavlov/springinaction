@@ -21,24 +21,24 @@ public class SpringIdolConfig {
   // <end id="duke15_bean_javaconfig" />
 
   // <start id="poeticduke_bean_javaconfig" />
-  @Bean
-  public Performer poeticDuke() {
-    return new PoeticJuggler(15, sonnet29());
-  }
+//  @Bean
+//  public Performer poeticDuke() {
+//    return new PoeticJuggler(15, sonnet29());
+//  }
 
-  @Bean
-  private Poem sonnet29() {
-    return new Sonnet29();
-  }
+//  @Bean
+//  private Poem sonnet29() {
+//    return new Sonnet29();
+//  }
 
   // <end id="poeticduke_bean_javaconfig" />
 
   // <start id="kenny_bean_javaconfig" />
-  @Bean
-  public Performer kenny() {
-    Instrumentalist kenny = new Instrumentalist();
-    kenny.setSong("Jingle Bells");
-    return kenny;
-  }
+//  @Bean
+//  public Performer kenny() {
+//    Instrumentalist kenny = new Instrumentalist();
+//    kenny.setSong("Jingle Bells");
+//    return kenny;
+//  }
   // <end id="kenny_bean_javaconfig" />
 }
