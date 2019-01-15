@@ -13,7 +13,7 @@
     <property name="song" value="Running with the Devil" />
   </bean>
   
-  <bean class="com.springinaction.springidol.Guitar" />
+  <bean id="guitar" class="com.springinaction.springidol.Guitar" />
 
   <bean id="piano" class="com.springinaction.springidol.Piano" />
 </beans>

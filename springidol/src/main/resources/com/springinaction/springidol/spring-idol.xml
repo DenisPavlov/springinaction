@@ -36,11 +36,9 @@
   <!--<end id="kenny_bean" />-->
 
   <!--<start id="kenny2_bean" />--> 
-  <!--<bean id="kenny2"-->
-      <!--class="com.springinaction.springidol.Instrumentalist">-->
-    <!--<property name="song" value="Jingle Bells" />-->
-    <!--<property name="instrument" ref="saxophone" />-->
-  <!--</bean>-->
+  <bean id="kenny2" class="com.springinaction.springidol.Instrumentalist" autowire="constructor">
+    <property name="song" value="Jingle Bells" />
+  </bean>
   <!--<end id="kenny2_bean" />-->
 
   <!--<bean id="stevie" class="com.springinaction.springidol.Instrumentalist">-->
@@ -113,8 +111,8 @@
   
   
   <!--<start id="saxophone_bean" />-->
-  <!--<bean id="piano" class="com.springinaction.springidol.Piano" />-->
-  <!--<bean id="saxophone" class="com.springinaction.springidol.Saxophone" />-->
+  <!--<bean id="piano" class="com.springinaction.springidol.Piano"/>-->
+  <bean id="saxophone" class="com.springinaction.springidol.Saxophone"/>
   <!--<end id="saxophone_bean" />-->
 
   <!--<bean id="harry" class="com.springinaction.springidol.Magician">-->

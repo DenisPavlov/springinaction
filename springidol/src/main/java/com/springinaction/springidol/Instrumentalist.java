@@ -1,7 +1,7 @@
 //<start id="instrumentalist_java" /> 
 package com.springinaction.springidol;
 
-public abstract class Instrumentalist implements Performer {
+public class Instrumentalist implements Performer {
   public Instrumentalist() {}
   public void perform() throws PerformanceException {
     System.out.print("Playing " + song + " : ");
@@ -12,6 +12,21 @@ public abstract class Instrumentalist implements Performer {
   public void setSong(String song) {
     this.song = song;
   }
-  public abstract Instrument getInstrument(); // Внедряемый метод
+
+  private Instrument instrument;
+
+  public Instrument getInstrument() {
+    return instrument;
+  }
+
+//  public void setInstrument(Instrument instrument) {
+//    this.instrument = instrument;
+//  }
+
+
+  public Instrumentalist(Instrument instrument) {
+    this.song = song;
+    this.instrument = instrument;
+  }
 }
 //<end id="instrumentalist_java" />
