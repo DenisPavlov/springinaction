@@ -12,7 +12,6 @@ public class AroundAudience {
   public void performance() {
   }
 
-  //<start id="audience_around_bean" /> 
   @Around("performance()")
   public void watchPerformance(ProceedingJoinPoint joinpoint) {
     try {
@@ -31,5 +30,4 @@ public class AroundAudience {
       System.out.println("Boo! We want our money back!");
     }
   }
-  //<end id="audience_around_bean" />
 }

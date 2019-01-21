@@ -8,9 +8,8 @@ import org.aspectj.lang.annotation.Pointcut;
 
 @Aspect
 public class Audience {
-  @Pointcut(
-        "execution(* com.springinaction.springidol.Performer.perform(..))")
-  public void performance() { //<co id="co_definePointcut"/>
+  @Pointcut("execution(* com.springinaction.springidol.Performer.perform(..))")
+  public void performance() {
   }
 
   @Before("performance()")

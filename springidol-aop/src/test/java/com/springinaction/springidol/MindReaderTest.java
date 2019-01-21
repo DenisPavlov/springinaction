@@ -17,12 +17,10 @@ public class MindReaderTest {
   @Autowired
   Thinker volunteer;
 
-  //<start id="testMindReader"/> 
   @Test
   public void magicianShouldReadVolunteersMind() {
     volunteer.thinkOfSomething("Queen of Hearts");
 
     assertEquals("Queen of Hearts", magician.getThoughts());
   }
-  //<end id="testMindReader"/>
 }
